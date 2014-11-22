@@ -1,0 +1,13 @@
+<div class="jumbotron">
+  <h1>{{players[0].name}} vs. {{players[1].name}}</h1>
+  <p class="lead">
+    <img src="images/rock-paper-scissors.png" alt="curleh moustache!"><br>
+    Your turn, {{currentPlayer.name}}.<br>
+  </p>
+  <div class="btn-group"
+    dropdown-select="ddSelectOptions"
+    dropdown-model="ddSelectSelected"
+    dropdown-item-label="text"
+    dropdown-onchange="addChoice(selected)" >
+  </div>
+</div>
